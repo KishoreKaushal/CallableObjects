@@ -1,0 +1,328 @@
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread: In instantiation of ‘static std::thread::_Invoker<std::tuple<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...> > std::thread::__make_invoker(_Callable&&, _Args&& ...) [with _Callable = CallableSampleTask&; _Args = {}; typename std::decay<_Tp>::type = std::decay<CallableSampleTask&>::type]’:
+/usr/include/c++/10/future:1727:32:   required from ‘std::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = CallableSampleTask&; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void]’
+main.cpp:19:83:   required from here
+/usr/include/c++/10/thread:287:4: error: no matching function for call to ‘std::tuple<CallableSampleTask>::tuple(<brace-enclosed initializer list> ’
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:795:2: note: candidate: ‘template<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Args2 ...>&&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  795 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:795:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:783:2: note: candidate: ‘template<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Args2 ...>&&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  783 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:783:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:772:2: note: candidate: ‘template<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Args2 ...>&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  772 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:772:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:760:2: note: candidate: ‘template<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Args2 ...>&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  760 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:760:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:752:2: note: candidate: ‘template<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Elements>&&) [with _Alloc = _Alloc; _Elements = {CallableSampleTask}]’
+  752 |  tuple(allocator_arg_t __tag, const _Alloc& __a, tuple&& __in)
+      |  ^~~~~
+/usr/include/c++/10/tuple:752:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:747:2: note: candidate: ‘template<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Elements>&) [with _Alloc = _Alloc; _Elements = {CallableSampleTask}]’
+  747 |  tuple(allocator_arg_t __tag, const _Alloc& __a, const tuple& __in)
+      |  ^~~~~
+/usr/include/c++/10/tuple:747:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:740:2: note: candidate: ‘template<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, _UElements&& ...) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  740 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:740:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects at least 2 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:730:2: note: candidate: ‘template<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, _UElements&& ...) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  730 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:730:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects at least 2 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:722:2: note: candidate: ‘template<class _Alloc, bool _NotEmpty, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<const CallableSampleTask&>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const _Elements& ...) [with _Alloc = _Alloc; bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  722 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:722:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:714:2: note: candidate: ‘template<class _Alloc, bool _NotEmpty, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<const CallableSampleTask&>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const _Elements& ...) [with _Alloc = _Alloc; bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  714 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/10/tuple:714:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 3 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:708:2: note: candidate: ‘template<class _Alloc, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<std::is_object<_Alloc>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&) [with _Alloc = _Alloc; typename std::enable_if<std::tuple<_Elements>::_TCC<std::is_object<_Alloc>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  708 |  tuple(allocator_arg_t __tag, const _Alloc& __a)
+      |  ^~~~~
+/usr/include/c++/10/tuple:708:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 2 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:699:2: note: candidate: ‘template<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(std::tuple<_Args1 ...>&&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  699 |  tuple(tuple<_UElements...>&& __in)
+      |  ^~~~~
+/usr/include/c++/10/tuple:699:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   ‘CallableSampleTask’ is not derived from ‘std::tuple<_Tps ...>’
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:690:2: note: candidate: ‘template<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(std::tuple<_Args1 ...>&&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  690 |  tuple(tuple<_UElements...>&& __in)
+      |  ^~~~~
+/usr/include/c++/10/tuple:690:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   ‘CallableSampleTask’ is not derived from ‘std::tuple<_Tps ...>’
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:680:2: note: candidate: ‘template<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const std::tuple<_Args1 ...>&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  680 |  tuple(const tuple<_UElements...>& __in)
+      |  ^~~~~
+/usr/include/c++/10/tuple:680:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   ‘CallableSampleTask’ is not derived from ‘const std::tuple<_Tps ...>’
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:670:2: note: candidate: ‘template<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const std::tuple<_Args1 ...>&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  670 |  tuple(const tuple<_UElements...>& __in)
+      |  ^~~~~
+/usr/include/c++/10/tuple:670:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   ‘CallableSampleTask’ is not derived from ‘const std::tuple<_Tps ...>’
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:663:17: note: candidate: ‘constexpr std::tuple<_Elements>::tuple(std::tuple<_Elements>&&) [with _Elements = {CallableSampleTask}]’
+  663 |       constexpr tuple(tuple&&) = default;
+      |                 ^~~~~
+/usr/include/c++/10/tuple:663:23: note:   no known conversion for argument 1 from ‘CallableSampleTask’ to ‘std::tuple<CallableSampleTask>&&’
+  663 |       constexpr tuple(tuple&&) = default;
+      |                       ^~~~~~~
+/usr/include/c++/10/tuple:657:2: note: candidate: ‘template<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(_UElements&& ...) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  657 |  tuple(_UElements&&... __elements)
+      |  ^~~~~
+/usr/include/c++/10/tuple:657:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/10/tuple:655:48: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  655 |         _ExplicitCtor<_Valid, _UElements...> = false>
+      |                                                ^~~~~
+/usr/include/c++/10/tuple:649:2: note: candidate: ‘template<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(_UElements&& ...) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  649 |  tuple(_UElements&&... __elements)
+      |  ^~~~~
+/usr/include/c++/10/tuple:649:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/10/tuple:647:48: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  647 |         _ImplicitCtor<_Valid, _UElements...> = true>
+      |                                                ^~~~
+/usr/include/c++/10/tuple:641:2: note: candidate: ‘template<bool _NotEmpty, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Cond>::__is_explicitly_constructible<const CallableSampleTask&>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const _Elements& ...) [with bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Dummy>::__is_explicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  641 |  tuple(const _Elements&... __elements)
+      |  ^~~~~
+/usr/include/c++/10/tuple:641:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/10/tuple:639:57: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  639 |         _ExplicitCtor<_NotEmpty, const _Elements&...> = false>
+      |                                                         ^~~~~
+/usr/include/c++/10/tuple:634:2: note: candidate: ‘template<bool _NotEmpty, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<_Cond>::__is_implicitly_constructible<const CallableSampleTask&>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const _Elements& ...) [with bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Dummy>::__is_implicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  634 |  tuple(const _Elements&... __elements)
+      |  ^~~~~
+/usr/include/c++/10/tuple:634:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/10/tuple:632:57: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  632 |         _ImplicitCtor<_NotEmpty, const _Elements&...> = true>
+      |                                                         ^~~~
+/usr/include/c++/10/tuple:627:2: note: candidate: ‘template<class _Dummy, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<std::is_void<_Tp>::value>::__is_explicitly_default_constructible(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple() [with _Dummy = _Dummy; typename std::enable_if<std::tuple<_Elements>::_TCC<std::is_void<_Dummy>::value>::__is_explicitly_default_constructible(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  627 |  tuple()
+      |  ^~~~~
+/usr/include/c++/10/tuple:627:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 0 arguments, 1 provided
+  287 |  } };
+      |    ^
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple:620:2: note: candidate: ‘template<class _Dummy, typename std::enable_if<std::tuple<CallableSampleTask>::_TCC<std::is_void<_Tp>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple() [with _Dummy = _Dummy; typename std::enable_if<std::tuple<_Elements>::_TCC<std::is_void<_Dummy>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> = <anonymous>; _Elements = {CallableSampleTask}]’
+  620 |  tuple()
+      |  ^~~~~
+/usr/include/c++/10/tuple:620:2: note:   template argument deduction/substitution failed:
+In file included from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/thread:287:4: note:   candidate expects 0 arguments, 1 provided
+  287 |  } };
+      |    ^
+/usr/include/c++/10/thread:287:4: error: could not convert ‘{<expression error>}’ from ‘<brace-enclosed initializer list>’ to ‘std::thread::_Invoker<std::tuple<CallableSampleTask> >’
+In file included from /usr/include/c++/10/bits/char_traits.h:39,
+                 from /usr/include/c++/10/ios:40,
+                 from /usr/include/c++/10/ostream:38,
+                 from /usr/include/c++/10/iostream:39,
+                 from utils.hpp:4,
+                 from main.cpp:1:
+/usr/include/c++/10/bits/stl_algobase.h: In instantiation of ‘typename __gnu_cxx::__enable_if<(! std::__is_scalar<_Tp>::__value), void>::__type std::__fill_a1(_ForwardIterator, _ForwardIterator, const _Tp&) [with _ForwardIterator = std::unique_ptr<CallableSampleTask>*; _Tp = std::unique_ptr<CallableSampleTask>; typename __gnu_cxx::__enable_if<(! std::__is_scalar<_Tp>::__value), void>::__type = void]’:
+/usr/include/c++/10/bits/stl_algobase.h:914:21:   required from ‘void std::__fill_a(_FIte, _FIte, const _Tp&) [with _FIte = std::unique_ptr<CallableSampleTask>*; _Tp = std::unique_ptr<CallableSampleTask>]’
+/usr/include/c++/10/bits/stl_algobase.h:1065:20:   required from ‘_OutputIterator std::__fill_n_a(_OutputIterator, _Size, const _Tp&, std::random_access_iterator_tag) [with _OutputIterator = std::unique_ptr<CallableSampleTask>*; _Size = long unsigned int; _Tp = std::unique_ptr<CallableSampleTask>]’
+/usr/include/c++/10/bits/stl_algobase.h:1094:29:   required from ‘_OI std::fill_n(_OI, _Size, const _Tp&) [with _OI = std::unique_ptr<CallableSampleTask>*; _Size = long unsigned int; _Tp = std::unique_ptr<CallableSampleTask>]’
+/usr/include/c++/10/array:117:20:   required from ‘void std::array<_Tp, _Nm>::fill(const value_type&) [with _Tp = std::unique_ptr<CallableSampleTask>; long unsigned int _Nm = 5; std::array<_Tp, _Nm>::value_type = std::unique_ptr<CallableSampleTask>]’
+main.cpp:15:72:   required from here
+/usr/include/c++/10/bits/stl_algobase.h:861:11: error: use of deleted function ‘std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = CallableSampleTask; _Dp = std::default_delete<CallableSampleTask>]’
+  861 |  *__first = __value;
+      |  ~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/bits/unique_ptr.h:469:19: note: declared here
+  469 |       unique_ptr& operator=(const unique_ptr&) = delete;
+      |                   ^~~~~~~~
+In file included from /usr/include/c++/10/bits/unique_ptr.h:37,
+                 from /usr/include/c++/10/memory:83,
+                 from /usr/include/c++/10/thread:44,
+                 from utils.hpp:5,
+                 from main.cpp:1:
+/usr/include/c++/10/tuple: In instantiation of ‘constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(_UHead&&) [with _UHead = CallableSampleTask; long unsigned int _Idx = 0; _Head = CallableSampleTask]’:
+/usr/include/c++/10/tuple:375:49:   required from ‘constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl(std::_Tuple_impl<_Idx, _Head>&&) [with long unsigned int _Idx = 0; _Head = CallableSampleTask]’
+/usr/include/c++/10/tuple:663:17:   required from ‘std::__future_base::_Async_state_impl<_BoundFn, _Res>::_Async_state_impl(_BoundFn&&) [with _BoundFn = std::thread::_Invoker<std::tuple<CallableSampleTask> >; _Res = void]’
+/usr/include/c++/10/ext/new_allocator.h:150:4:   required from ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>; _Args = {std::thread::_Invoker<std::tuple<CallableSampleTask> >}; _Tp = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>]’
+/usr/include/c++/10/bits/alloc_traits.h:512:17:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>; _Args = {std::thread::_Invoker<std::tuple<CallableSampleTask> >}; _Tp = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void> >]’
+/usr/include/c++/10/bits/shared_ptr_base.h:551:39:   required from ‘std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::thread::_Invoker<std::tuple<CallableSampleTask> >}; _Tp = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>; _Alloc = std::allocator<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/10/bits/shared_ptr_base.h:682:16:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/include/c++/10/bits/shared_ptr.h:408:59:   required from ‘std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void> >; _Args = {std::thread::_Invoker<std::tuple<CallableSampleTask> >}; _Tp = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>]’
+/usr/include/c++/10/bits/shared_ptr.h:859:14:   required from ‘std::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>; _Alloc = std::allocator<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void> >; _Args = {std::thread::_Invoker<std::tuple<CallableSampleTask> >}]’
+/usr/include/c++/10/bits/shared_ptr.h:875:39:   required from ‘std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<CallableSampleTask> >, void>; _Args = {std::thread::_Invoker<std::tuple<CallableSampleTask> >}]’
+/usr/include/c++/10/future:1712:44:   required from ‘static std::shared_ptr<std::__future_base::_State_baseV2> std::__future_base::_S_make_async_state(_BoundFn&&) [with _BoundFn = std::thread::_Invoker<std::tuple<CallableSampleTask> >]’
+/usr/include/c++/10/future:1726:52:   required from ‘std::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = CallableSampleTask&; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void]’
+main.cpp:19:83:   required from here
+/usr/include/c++/10/tuple:137:42: error: use of deleted function ‘CallableSampleTask::CallableSampleTask(const CallableSampleTask&)’
+  137 |  : _M_head_impl(std::forward<_UHead>(__h)) { }
+      |                                          ^
+In file included from main.cpp:1:
+utils.hpp:45:5: note: declared here
+   45 |     CallableSampleTask(const CallableSampleTask&) = delete;
+      |     ^~~~~~~~~~~~~~~~~~

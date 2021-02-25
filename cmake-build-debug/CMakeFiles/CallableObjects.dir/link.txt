@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/CallableObjects.dir/main.cpp.o  -o CallableObjects 
