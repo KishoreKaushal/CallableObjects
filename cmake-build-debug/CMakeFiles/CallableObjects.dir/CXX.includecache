@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kaushal/CLionProjects/CallableObjects/main.cpp
+utils.hpp
+/home/kaushal/CLionProjects/CallableObjects/utils.hpp
+iostream
+-
+array
+-
+future
+-
+memory
+-
+
+/home/kaushal/CLionProjects/CallableObjects/utils.hpp
+iostream
+-
+thread
+-
+future
+-
+functional
+-
+chrono
+-
+
