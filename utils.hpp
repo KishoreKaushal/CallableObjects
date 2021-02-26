@@ -13,7 +13,7 @@ class CallableStoppableTask {
     std::promise<void>  exit_signal;
     std::future<void>   future_obj;
 
-    public:
+public:
 
     CallableStoppableTask() : future_obj(exit_signal.get_future()) {}
 
@@ -51,7 +51,7 @@ class CallableSampleTask : public CallableStoppableTask {
     }
 
 public:
-    CallableSampleTask(const Car& arg_car = Car());
+    CallableSampleTask(const Car& arg_car = Car()) {} 
 };
 
 #endif
